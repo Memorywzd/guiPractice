@@ -62,7 +62,6 @@ class StandardInput(QWidget):
         self.bt4.clicked.connect(self.showDialog)
         self.bt5.clicked.connect(self.showDialog)
 
-        self.show()
 
     def showDialog(self):
         sender = self.sender()
@@ -92,4 +91,5 @@ class StandardInput(QWidget):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ui = StandardInput()
+    ui.show()
     sys.exit(app.exec_())
